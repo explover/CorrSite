@@ -1,0 +1,12 @@
+<h1>Get track list by tissue or by mark.</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'correlations/got_tracks' %}" method="post">
+{% csrf_token %}
+<label>Enter your tissue here: </label>
+<input type="text" name="tissue" id="1" value="" /> <BR/> <BR/>
+<label>Enter your mark here: </label>
+<input type="text" name="mark" id='2' value="" /> <BR/>
+<input type="submit" value="Submit" />
+</form>

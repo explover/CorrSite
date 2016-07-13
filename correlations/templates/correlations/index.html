@@ -1,0 +1,8 @@
+{% if tissue_list %}
+    <ul>
+    {% for tissue in tissue_list %}
+	<li><a href="{% url 'correlations:runs' tissue.id %}">{{ tissue.tissue }}</a></li>{% endfor %}
+    </ul>
+{% else %}
+    <p>No tissues are available.</p>
+{% endif %}

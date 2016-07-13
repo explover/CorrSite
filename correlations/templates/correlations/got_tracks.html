@@ -1,0 +1,12 @@
+<h1>Got track list by tissue or by mark.</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% csrf_token %}
+<table>
+{% for track1 in track_list %}
+<tr> <td> {{ track1.tissue.tissue }} </td> {% for track2 in track_list %} <td> 
+    <li>{{ track.tissue.tissue }}</li>
+{% endfor %}
+</table>
+{{ list }}
+</form>

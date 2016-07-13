@@ -1,0 +1,12 @@
+<h1>Get fg files by tissue id.</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url %}" method="post">
+{% csrf_token %}
+<label>Enter your tissue here: </label>
+<input type="text" name="tissue" id="1" value="" /> <BR/> <BR/>
+<label>Enter your mark here: </label>
+<input type="text" name="mark" id='2' value="" /> <BR/>
+<input type="submit" value="Submit" />
+</form>

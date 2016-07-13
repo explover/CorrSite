@@ -1,0 +1,11 @@
+<h1>{{ tissue.tissue }}</h1>
+<h1>{{ tissue.id }}</h1>
+<p>number of runs:{{ run_list.count}}</p>
+
+<ul>
+{% for run in run_list %}
+    <li>{{ run.track1.tissue.tissue }} {{run.track1.mark.mark}} {{run.track2.tissue.tissue}} {{run.track2.mark.mark}}</li>
+{% endfor %}
+</ul>
+
+
