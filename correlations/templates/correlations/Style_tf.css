@@ -1,0 +1,40 @@
+    .mainTd {
+    	align:center; 
+	    border: 1px solid black; 
+	    overflow:hidden;   
+	    padding:2px;
+	    height: 40px; 
+	    width:  40px;
+	    max-height: 40px; 
+	    min-height: 40px; 
+	    max-width:  40px; 
+	    min-width:  40px;
+    } /*main table cell*/
+    .tdDiv  { 
+	    text-align:center;
+	    width:  40px;
+	    height: 40px;
+ 	    max-width:  40px; 
+	    min-width:  40px;
+		overflow:hidden;  } /*main table cell content*/
+
+    .colTh     {
+    	height:auto;
+    	}                                   /*column header cell. redefine height*/
+    .colThDiv  {
+	    width: auto;
+	    height:auto;
+	    max-width:  300px;
+    }                                   /*column header cell. redefine height*/
+
+    .rowTd  {                                       width: 110px; max-width: 110px; min-width: 40px;}                                   /*row header cell. redefine width*/
+    .rowDiv { overflow:hidden; text-align:center;   width: 110px; max-width: 110px; min-width: 40px;}                                   /*row header cell content. redefine width*/
+
+	.aref {font-size:70%; font-weight:bold;   color:#000000; text-align:center;}
+	.hideButton{color:#ff0000; font-weight:800; font-color:"red"; height: 16px; width: 16px;}
+	.button{text-align: center; 
+			align: center;
+			vertical-align:middle; 
+	 		border-style: outset; 
+	 		border-width:3px; 
+	 		background-color: #dddddd;}
